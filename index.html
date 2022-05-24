@@ -59,24 +59,24 @@
         </div>
       </div>
     </div>
-	<script>
-	let container = document.querySelectorAll("span.action");
-	for(let item of container) {
-	    if (item.dataset.action == null) {
-	        continue;
-	    }
+    <script>
+    let container = document.querySelectorAll("span.action");
+    for(let item of container) {
+        if (item.dataset.action == null) {
+            continue;
+        }
 
-	    if (item.dataset.action == "open") {
-			item.addEventListener('click', () => {
-				window.open(item.dataset.value, '_blank');
-			});
-	    } else if (item.dataset.action == "mailto") {
-			item.addEventListener('click', () => {
-				window.open("mailto:" + item.dataset.value);
-			});
-	    }
-	}
-	
+        if (item.dataset.action == "open") {
+            item.addEventListener('click', () => {
+                window.open(item.dataset.value, '_blank');
+            });
+        } else if (item.dataset.action == "mailto") {
+            item.addEventListener('click', () => {
+                window.open("mailto:" + item.dataset.value);
+            });
+        }
+    }
+    
     document.querySelector('.morphing-icons').addEventListener('click', e => {
       if (document.body.dataset.theme == "") {
         document.body.dataset.theme = "dark";
@@ -86,6 +86,17 @@
 
       e.currentTarget.classList.toggle('morphed');
     });
-	</script>
+    </script>
+
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e80807703bf84b89b9f94cd3c0a6aaec"}'></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VXX134FTFJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-VXX134FTFJ');
+    </script>
   </body>
 </html>
