@@ -129,6 +129,26 @@ body {
   color: var(--text-color);
 }
 
+.sub-title a:link {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.sub-title a:visited {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.sub-title a:hover {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.sub-title a:active {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
 .center {
   text-align: center;
   justify-content: center;
@@ -136,6 +156,7 @@ body {
 
 .icon {
   display: inline-block;
+  cursor: pointer;
   vertical-align: middle;
   justify-content: center;
   height: 2.5rem;
@@ -184,7 +205,6 @@ body {
 
 .morphing-icons span {
   position: absolute;
-  user-select: none;
   top: 0;
   left: 0;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
